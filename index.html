@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
 </head>
-
 
 
 <body>
@@ -16,8 +16,88 @@
     <p>This is a quiz to test your general knowledge in various school subjects, please enjoy!</p>
     <p><i>Select 1 answer for each question</i></p>
 
-    <p>1. How many countries are there in the world?</p>
 
+    <div>
+        <ul class="question">
+            <p>1. How many countries are there in the world?</p>
+            <li>
+                <input type="radio" id="html" name="question_1" value="HTML" data-correct-answer />
+                <label for="html">195</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_1" value="HTML" />
+                <label for="html">128</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_1" value="HTML" />
+                <label for="html">210</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_1" value="HTML" />
+                <label for="html">175</label>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="question">
+            <p>1. How many countries are there in the world?</p>
+            <li>
+                <input type="radio" id="html" name="question_2" value="HTML" />
+                <label for="html">195</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_2" value="HTML" data-correct-answer />
+                <label for="html">128</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_2" value="HTML" />
+                <label for="html">210</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_2" value="HTML" />
+                <label for="html">175</label>
+            </li>
+        </ul>
+    </div>
+
+
+    <div>
+        <ul class="question">
+            <p>1. How many countries are there in the world?</p>
+            <li>
+                <input type="radio" id="html" name="question_3" value="HTML" />
+                <label for="html">195</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_3" value="HTML" data-correct-answer />
+                <label for="html">128</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_3" value="HTML" />
+                <label for="html">210</label>
+            </li>
+
+            <li>
+                <input type="radio" id="html" name="question_3" value="HTML" />
+                <label for="html">175</label>
+            </li>
+        </ul>
+    </div>
+
+
+    <button onclick="compute_score()">Valider</button>
+
+
+    <!-- 
     <p>2. Which year did WWII end?</p>
 
     <p>3. What is 198 to the power of 0?</p>
@@ -35,7 +115,7 @@
     <p>9. Which one of these civilizations existed around 3100 B.C.?</p>
 
     <p>10. What is the largest animal which exists today?</p>
-
+ -->
 </body>
 
 </html>

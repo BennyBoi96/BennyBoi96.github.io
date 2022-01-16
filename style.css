@@ -1,1 +1,5 @@
 /* css goes here */
+
+ul.question {
+    list-style-type: none;
+}
