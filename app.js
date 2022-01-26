@@ -18,6 +18,8 @@ function compute_score() {
     });
 
     // Display the score
-    alert("Your score is " + score + " / " + question_elements.length);
+    $("#all-questions").hide();
+    $("#score").text(score);
+    $("#num_questions").text(question_elements.length);
+    $("#result-message").show();
 }
-

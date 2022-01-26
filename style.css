@@ -4,4 +4,10 @@ ul.question {
     list-style-type: none;
 }
 
-body {background-color: cyan;}
+body {
+    background-image: url("https://www.teahub.io/photos/full/76-761380_wiki-nyan-cat-desktop-backgrounds-pic-wpe004399-data.jpg");
+}
+
+#result-message {
+    display: none;
+}
