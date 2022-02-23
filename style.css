@@ -2,10 +2,16 @@
 
 ul.question {
     list-style-type: none;
+    font-size: 20px;
 }
 
-body {
-    background-color: lightblue;
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://media.istockphoto.com/photos/and-a-concept-yellow-question-mark-glowing-amid-black-question-marks-picture-id1305169776?b=1&k=20&m=1305169776&s=170667a&w=0&h=mpYdh2MzGN_rqxoRNlO5KWGCCq3ZktzSfp-wA0nD9no=);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 nav{ 
@@ -58,11 +64,11 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 80px;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
 }
 .hero-btn{
@@ -71,12 +77,133 @@ nav img{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 16px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s; 
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+.active-page{
+    font-weight: bold;
+    color: #f44336 !important
+}
 
 #result-message {
     display: none;
+}
+
+
+/*----------- quiz page ---------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.lecole.edu.pk/wp-content/uploads/2021/01/Education-Pic.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover{
+    color: #fff;
+
+}
+
+.result-text-box{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.result-text-box h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+/*----------- about page ---------*/
+.sub-header-2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(25, 60, 202, 0.7),rgba(46, 53, 80, 0.7)),url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?t=st=1645552508~exp=1645553108~hmac=6ddf1c86f9ea56d37e568998928f100c607a14f13e60f0e2dbdc38bedf0e1d75&w=996);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header-2 h1{
+    margin-top: 100px;
+    font-size: 50px;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 110%;
+    
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
 }
